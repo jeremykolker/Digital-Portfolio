@@ -14,17 +14,17 @@ $(() => {
         //  ACCESS THE PARENT ELEMENT OF THE CLICKED SECTION \\
         //  ACCESS THAT ELEMENTS CHILD (WITH CLASS OF .CONTENT USING FIND METHOD  \\
         //  TOGGLE THE .CONTENT ELEMENTS USING SLIDE-TOGGLE METHOD \\
-        $(this).parent().find('.content').slideToggle();
+        $(this).parent().find('.content').slideToggle()
         //  ACCESS UNUSED SECTIONS WITH .NOT METHOD \\
         //  FIND THE CHILD ELEMENTS WITH A CLASS OF CONTENT \\
         //  USE SLIDE UP METHOD TO HIDE LEFTOVER CONTENT ELEMENTS \\ 
-        $('.section').not($(this).parent()).find('.content').slideUp();
+        $('.section').not($(this).parent()).find('.content').slideUp()
         
-      });
+      })
      
       
 
-});
+})
 
 
 

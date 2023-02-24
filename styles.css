@@ -1,10 +1,19 @@
 body {
     display: block;
     background-color: aquamarine;
+    object-fit: cover;
+    font-family: 'Noto Serif JP', serif;
 }
 h1{
     text-align: center;
+    margin-top: 1%;
+    font-family: 'Noto Serif JP', serif;
     
+}
+
+.backgroundPics{
+    display: flex;
+    object-fit: scale-down;
 }
 .container {
     display: flex;
@@ -12,51 +21,69 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-   margin-top: 475px;
+    margin-top: 470px;
+    align-content: center;
+  
+
     
   }
   
   .section {
-    width: 45%;
-    background-color: white;
-    margin-bottom: 20px;
+    width: 60%;
+    background-color: aquamarine;
+    margin-bottom: 50px;
     border-radius: 10px;
     justify-content: center;
     overflow: hidden;
+    opacity: 95%;
+    align-items: center;
+    align-content: center;
   }
   
   .section h2 {
     margin: 0;
+    align-items: center;
+    align-content: center;
     padding: 10px;
     cursor: pointer;
     background-color: whitesmoke;
     text-align: center;
+    opacity: 90%
   }
   
   a{
     width: 40%;
     height: 50%;
+    align-items: center;
+    align-content: center;
   }
   p {
-    text-align: center
+    text-align: center;
+    align-items: center;
+    align-content: center;
   }
+
+  
   .content {
     padding: 10px;
     display: none;
+    align-items: center;
+    align-content: center;
   }
   
-  #aboutMe {
-
-  }
-
   #resume {
-
+  
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    
   }
 
-  #projects {
 
-  }
+  
+  
 
-  #links {
+  
 
-  }
+  

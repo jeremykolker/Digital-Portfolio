@@ -6,7 +6,13 @@
 
 
 $(() => {
-   
+  // ENABLE DARKMODE! \\
+  // $(function darkmode() {
+  //   document.body.classList.toggle('dark-mode');
+  // })
+
+
+
 // create an index of the image beings used in our slideshow \\
     let currentImgIndex = 0
 // declare a variable that keeps track of our photos \\
@@ -15,13 +21,11 @@ $(() => {
     // NEXT BUTTON \\
     $('.next').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
-
         if (currentImgIndex < numOfImages) {
             currentImgIndex++
         } else {
             currentImgIndex = 0
         }
-
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'block')
     })
 
@@ -53,15 +57,12 @@ $(() => {
         
       })
      
+   
+    
       
+     
 
 })
-
-
-
-
-
-
 
 
 

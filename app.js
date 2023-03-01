@@ -13,12 +13,12 @@ $(() => {
 
 
 
-// create an index of the image beings used in our slideshow \\
+// CREATE AN INDEX VARIABLE OF THE IMAGES IN OUR SLIDESHOW\\
     let currentImgIndex = 0
-// declare a variable that keeps track of our photos \\
+// DECLASE A VARIABLE THAT CONTINUOUSLY KEEPS TRACK OF OUR POSITION IN THE SLIDESHOW \\
     const numOfImages = $('.slideshow-images').children().length - 1
 
-    // NEXT BUTTON \\
+    // THE NEXT BUTTON \\
     $('.next').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
         if (currentImgIndex < numOfImages) {
@@ -29,7 +29,7 @@ $(() => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'block')
     })
 
-    // PREVIOUS BUTTON \\
+    // THE PREVIOUS BUTTON \\
     $('.previous').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
 

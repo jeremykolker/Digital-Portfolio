@@ -76,7 +76,6 @@ h1{
     word-spacing: 10px;
     font-weight: 700;
     opacity: 75%;
-    word-spacing: 15%;
     border: 0 none;
     text-decoration: inherit;
     border-style: none;
@@ -147,6 +146,10 @@ h1{
     }
     .container{
       margin-top: 200px;
+    }
+    #links{
+    display: flex;
+    flex-direction: row;
     }
   }
 

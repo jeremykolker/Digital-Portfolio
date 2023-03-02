@@ -66,6 +66,7 @@ h1{
   }
   #resume {
     text-align: center;
+    font-size: large;
    
   }
   #projects {
@@ -164,28 +165,29 @@ h1{
   }
 
 .navbar {
-  display: block;
+  display: flex;
   overflow: hidden;
   margin-top: 0%;
-  border: 2px;
-  border-style: groove;
-  background-color: #edf5ed;
+  /* border: 2px;
+  border-style: groove; */
+ 
   opacity: 60%;
 }
 
-.navbar a {
-  float: left;
+.navbar .container4 {
+  border-color: #505038;
+  border-style:groove;
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: xx-large;
   font-weight: bolder;
   opacity: 90%;
-  text-shadow: whitesmoke 1px 0 2px;
 }
 
-.navbar a:hover {
+.navbar .container4:hover {
   background-color: #ddd;
+  cursor: pointer;
   color: black;
 }
 

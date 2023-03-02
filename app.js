@@ -6,29 +6,26 @@
 
 
 $(() => {
-  // ENABLE DARKMODE! \\
-  // $(function darkmode() {
-  //   document.body.classList.toggle('dark-mode');
-  // })
-
-
-
 // CREATE AN INDEX VARIABLE OF THE IMAGES IN OUR SLIDESHOW\\
-    let currentImgIndex = 0
+let currentImgIndex = 0
 // DECLASE A VARIABLE THAT CONTINUOUSLY KEEPS TRACK OF OUR POSITION IN THE SLIDESHOW \\
-    const numOfImages = $('.slideshow-images').children().length - 1
+const numOfImages = $('.slideshow-images').children().length - 1
 
+const numOfSections = $('.section').children().length - 1
     // THE NEXT BUTTON \\
     $('.next').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
+        
         if (currentImgIndex < numOfImages) {
             currentImgIndex++
         } else {
             currentImgIndex = 0
         }
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'block')
+
     })
 
+        
     // THE PREVIOUS BUTTON \\
     $('.previous').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
@@ -42,11 +39,14 @@ $(() => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'block')
     })
 
-    // ATTACH A CLICK EVENT TOGGLE FUNCTION THAT FINDS + DISPLAYS THE SELECTED .SECTION & HIDES EVERYTHING ELSE \\
+   
+   
+ 
+    // ATTACH A CLICK EVENT TOGGLE FUNCTION THAT FINDS + DISPLAYS THE SELECTED SECTION & HIDES EVERYTHING ELSE \\
      // SELECT ALL THE .SECTION HEADERS \\
     //  ATTACH CLICK FUNCTION \\
     $('.section h2').click(function() {
-        //  ACCESS THE PARENT ELEMENT OF THE CLICKED SECTION \\
+        //  ACCESS THE PARENT ELEMENT USING FIND METHOD OF THE CLICKED SECTION \\
         //  ACCESS THAT ELEMENTS CHILD (WITH CLASS OF .CONTENT USING FIND METHOD  \\
         //  TOGGLE THE .CONTENT ELEMENTS USING FADE-TOGGLE METHOD \\
         $(this).parent().find('.content').fadeToggle()
@@ -58,9 +58,10 @@ $(() => {
       })
      
    
-    
-      
-     
+
+       
+          
+          
 
 })
 

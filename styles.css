@@ -30,7 +30,9 @@ h1{
     flex-direction: column;
     margin-top: 180px;
     align-content: center;    
+   
   }
+ 
   .section {
     width: 60%;
     margin-bottom: 20px;
@@ -42,8 +44,10 @@ h1{
     border-color: azure;
     background-color:  #edf5ed;
     border-style: groove;
+    
   }
   .section h2 {
+  
     margin: 0;
     padding: 5px;
     cursor: pointer;
@@ -56,6 +60,19 @@ h1{
   } 
   
   .content {
+  
+    padding: 5px;
+    display: none;
+    background-color: aliceblue;
+    text-decoration: none;
+  }
+  .content2 {
+    padding: 5px;
+    display: none;
+    background-color: aliceblue;
+    text-decoration: none;
+  }
+  .content3 {
     padding: 5px;
     display: none;
     background-color: aliceblue;

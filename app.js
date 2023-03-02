@@ -54,28 +54,31 @@ const numOfImages = $('.slideshow-images').children().length - 1
         $('.section').not($(this).parent()).find('.content').fadeOut()
         
       })
-     
-   
-
+    
        
+    //   $(".content, .content2, .content3").hide()
+
       $("a#aboutmenav").click(function() {
         $(".content").fadeToggle()
+        $(".content2, .content3").fadeOut()
          
       })
       
       $("a#resumenav").click(function() {
-        $(".content", "#resume").fadeToggle()
+        $(".content2").fadeToggle()
+        $(".content, .content3").fadeOut()
        
         
       })
 
       $("a#projectsnav").click(function() {
-        $("#projects").fadeToggle()
+        $(".content3").fadeToggle()
+        $(".content, .content2").fadeOut()
         
       })
 
 
-          
+    
 
 })
 

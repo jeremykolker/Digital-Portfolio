@@ -64,7 +64,7 @@ const numOfImages = $('.slideshow-images').children().length - 1
       })
       
       $("a#resumenav").click(function() {
-        $(".section").fadeToggle()
+        $(".content", "#resume").fadeToggle()
        
         
       })

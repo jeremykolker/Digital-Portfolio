@@ -44,7 +44,7 @@ const numOfImages = $('.slideshow-images').children().length - 1
      // SELECT ALL THE .SECTION HEADERS \\
     //  ATTACH CLICK FUNCTION \\
     $('.section h2').click(function() {
-        //  ACCESS THE PARENT ELEMENT USING FIND METHOD OF THE CLICKED SECTION \\
+        //  ACCESS THE PARENT ELEMENT OF THE SELECTED OBJECT USING FIND METHOD \\
         //  ACCESS THAT ELEMENTS CHILD (WITH CLASS OF .CONTENT USING FIND METHOD  \\
         //  TOGGLE THE .CONTENT ELEMENTS USING FADE-TOGGLE METHOD \\
         $(this).parent().find('.content').fadeToggle()

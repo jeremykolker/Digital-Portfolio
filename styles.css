@@ -171,6 +171,7 @@ h1{
     display: flex;
     flex-direction: row;
     }
+
   }
   @media only screen and (max-width: 418px) { 
     .container{
@@ -178,6 +179,9 @@ h1{
     }
     cartoon-resume {
       max-width: 80px;
+    }
+    .container4{
+      margin-top: 12%;
     }
   }
 

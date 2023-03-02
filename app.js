@@ -8,10 +8,10 @@
 $(() => {
 // CREATE AN INDEX VARIABLE OF THE IMAGES IN OUR SLIDESHOW\\
 // INTIAL IMAGE DISPLAYED HAS A VALUE OF 0 \\
-let currentImgIndex = 0
-// DECLARE A VARIABLE THAT CONTINUOUSLY KEEPS TRACK OF OUR POSITION IN THE SLIDESHOW AND THEN REPEATS ITSELF\\
-const numOfImages = $('.slideshow-images').children().length - 1
+    let currentImgIndex = 0
 
+// DECLARE A VARIABLE THAT CONTINUOUSLY KEEPS TRACK OF OUR POSITION IN THE SLIDESHOW AND THEN REPEATS ITSELF\\ 
+    const numOfImages = $('.slideshow-images').children().length - 1
     // THE NEXT BUTTON \\
     $('.next').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
@@ -56,23 +56,25 @@ const numOfImages = $('.slideshow-images').children().length - 1
       })
     
        
-    //   $(".content, .content2, .content3").hide()
-
+    //NAVIGATION BAR CLICK EVENTS\\
+        // UPON SELECTION, ACCESS AND DISPLAY THE ABOUT-ME OBJECTS/CONTENTS \\ 
       $("a#aboutmenav").click(function() {
         $(".content").fadeToggle()
+        // HIDE THE OTHER SECTIONS \\
         $(".content2, .content3").fadeOut()
          
       })
-      
+       // UPON SELECTION, ACCESS AND DISPLAY THE RESUME OBJECTS/CONTENTS \\ 
       $("a#resumenav").click(function() {
         $(".content2").fadeToggle()
+        // HIDE THE OTHER SECTIONS \\
         $(".content, .content3").fadeOut()
        
-        
       })
-
+      // UPON SELECTION, ACCESS AND DISPLAY THE RESUME OBJECTS/CONTENTS \\ 
       $("a#projectsnav").click(function() {
         $(".content3").fadeToggle()
+        // HIDE THE OTHER SECTIONS \\
         $(".content, .content2").fadeOut()
         
       })
@@ -81,9 +83,6 @@ const numOfImages = $('.slideshow-images').children().length - 1
     
 
 })
-
-
-
 
 // JEREMY KOLKERS UNIT 1 PROJECT JS CODE! \\
 

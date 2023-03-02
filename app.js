@@ -7,11 +7,11 @@
 
 $(() => {
 // CREATE AN INDEX VARIABLE OF THE IMAGES IN OUR SLIDESHOW\\
+// INTIAL IMAGE DISPLAYED HAS A VALUE OF 0 \\
 let currentImgIndex = 0
-// DECLASE A VARIABLE THAT CONTINUOUSLY KEEPS TRACK OF OUR POSITION IN THE SLIDESHOW \\
+// DECLARE A VARIABLE THAT CONTINUOUSLY KEEPS TRACK OF OUR POSITION IN THE SLIDESHOW AND THEN REPEATS ITSELF\\
 const numOfImages = $('.slideshow-images').children().length - 1
 
-const numOfSections = $('.section').children().length - 1
     // THE NEXT BUTTON \\
     $('.next').on('click', () => {
         $('.slideshow-images').children().eq(currentImgIndex).css('display', 'none')
@@ -40,8 +40,6 @@ const numOfSections = $('.section').children().length - 1
     })
 
    
-   
- 
     // ATTACH A CLICK EVENT TOGGLE FUNCTION THAT FINDS + DISPLAYS THE SELECTED SECTION & HIDES EVERYTHING ELSE \\
      // SELECT ALL THE .SECTION HEADERS \\
     //  ATTACH CLICK FUNCTION \\
@@ -60,7 +58,23 @@ const numOfSections = $('.section').children().length - 1
    
 
        
-          
+      $("a#aboutmenav").click(function() {
+        $(".content").fadeToggle()
+         
+      })
+      
+      $("a#resumenav").click(function() {
+        $(".section").fadeToggle()
+       
+        
+      })
+
+      $("a#projectsnav").click(function() {
+        $("#projects").fadeToggle()
+        
+      })
+
+
           
 
 })

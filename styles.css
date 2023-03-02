@@ -170,23 +170,14 @@ h1{
   margin-top: 0%;
   /* border: 2px;
   border-style: groove; */
- 
-  opacity: 60%;
+ max-width: 50px;
+ background-color: aliceblue;
+opacity: 60%;
 }
 
-.navbar .container4 {
-  border-color: #505038;
-  border-style:groove;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: xx-large;
-  font-weight: bolder;
-  opacity: 90%;
-}
 
-.navbar .container4:hover {
-  background-color: #ddd;
+.navbar:hover {
+  background-color:#edf5ed;
   cursor: pointer;
   color: black;
 }
@@ -195,3 +186,32 @@ h1{
   background-color: #b0ffe2;
   color: white;
 }
+
+.navbutton {
+  background-color:#edf5ed;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.container4 {
+  margin-top: 4%;
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.container4 a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.container4 a:hover {background-color:#edf5ed}
+
+.navbar:hover .container4 {display: block;}
+
+.navbar:hover .navbutton {background-color:#edf5ed;}

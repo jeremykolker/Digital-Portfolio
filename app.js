@@ -54,6 +54,32 @@ $(() => {
         $('.section').not($(this).parent()).find('.content').fadeOut()
         
       })
+
+      $('.section h2').click(function() {
+        //  ACCESS THE PARENT ELEMENT OF THE SELECTED OBJECT USING FIND METHOD \\
+        //  ACCESS THAT ELEMENTS CHILD (WITH CLASS OF .CONTENT USING FIND METHOD  \\
+        //  TOGGLE THE .CONTENT ELEMENTS USING FADE-TOGGLE METHOD \\
+        $(this).parent().find('.content2').fadeToggle()
+        //  ACCESS UNUSED SECTIONS WITH .NOT METHOD \\
+        //  .FIND THE CHILD ELEMENTS WITH A CLASS OF CONTENT \\
+        //  USE FADEOUT() METHOD TO HIDE LEFTOVER CONTENT ELEMENTS \\ 
+        $('.section').not($(this).parent()).find('.content3').fadeOut()
+        
+      })
+
+      $('.section h2').click(function() {
+        //  ACCESS THE PARENT ELEMENT OF THE SELECTED OBJECT USING FIND METHOD \\
+        //  ACCESS THAT ELEMENTS CHILD (WITH CLASS OF .CONTENT USING FIND METHOD  \\
+        //  TOGGLE THE .CONTENT ELEMENTS USING FADE-TOGGLE METHOD \\
+        $(this).parent().find('.content3').fadeToggle()
+        //  ACCESS UNUSED SECTIONS WITH .NOT METHOD \\
+        //  .FIND THE CHILD ELEMENTS WITH A CLASS OF CONTENT \\
+        //  USE FADEOUT() METHOD TO HIDE LEFTOVER CONTENT ELEMENTS \\ 
+        $('.section').not($(this).parent()).find('.content2').fadeOut()
+        
+      })
+
+      
     
        
     //NAVIGATION BAR CLICK EVENTS\\

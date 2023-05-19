@@ -123,7 +123,9 @@ h1{
   }
   .slideshow-images img {
     width: 100%;
+    height: 500px;
     display: none;
+    object-fit: cover;
   }
   .slideshow-button {
     align-self: center;
@@ -138,6 +140,8 @@ h1{
     border-radius: 50%;
     transition: 0.2s;
   }
+
+ 
   .slideshow-button:hover{
     background-color: #dcd8d8;
   }
@@ -149,6 +153,14 @@ h1{
     display: block;
   }
 
+  .links{
+    text-align: center;
+  }
+
+  a{
+    text-align: center;
+  }
+  
   @media only screen and (max-width: 841px) {
     h1 {
     margin-top: 10%;
@@ -236,3 +248,38 @@ opacity: 60%;
 .navbar:hover .container4 {display: block;}
 
 .navbar:hover .navbutton {background-color:#edf5ed;}
+
+
+#sky {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#shootingstars {
+  margin: 0;
+  padding: 0;
+  width: 150vh;
+  height: 100vw;
+  position: fixed;
+  overflow: hidden;
+  transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
+    rotate(120deg);
+}
+
+.wish {
+  height: 2px;
+  top: 300px;
+  width: 100px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  background-color: white;
+  position: absolute;
+  background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px white);
+  overflow: hidden;
+}
